@@ -5,7 +5,7 @@ EAPI=8
 
 DESCRIPTION="StartWine-Launcher"
 HOMEPAGE="https://github.com/RusNor/StartWine-Launcher/"
-SRC_URI="https://github.com/SheridanOAI/startwine/raw/main/StartWine_v${PV}.tar.gz"
+SRC_URI="https://github.com/lIS217/startwine/releases/download/startwine/StartWine_v${PV}.tar.xz"
 S="${WORKDIR}"
 
 LICENSE="GPL-3"
