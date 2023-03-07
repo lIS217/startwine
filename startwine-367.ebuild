@@ -3,9 +3,9 @@
 
 EAPI=8
 
-DESCRIPTION="StartWine-Launcher"
-HOMEPAGE="https://github.com/RusNor/StartWine-Launcher/"
-SRC_URI="https://github.com/lIS217/startwine/releases/download/startwine/StartWine_v${PV}.tar.xz"
+DESCRIPTION="startwine"
+HOMEPAGE="https://github.com/LIS217/${DESCRIPTION}"
+SRC_URI="${HOMEPAGE}/releases/download/startwine/StartWine_v${PV}.tar.xz"
 S="${WORKDIR}"
 
 LICENSE="GPL-3"
@@ -25,7 +25,10 @@ DEPEND="app-arch/zstd
        dev-python/numpy
        dev-python/pycairo
        dev-python/pillow
-       dev-python/six"
+       dev-python/six
+       app-arch/lz4
+       sys-fs/squashfs-tools
+       sys-fs/squashfuse"
 RDEPEND="${DEPEND}"
 
 src_prepare() {
