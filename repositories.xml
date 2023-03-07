@@ -2,13 +2,13 @@
 <repositories version="1.0">
   <repo quality="experimental" status="unofficial">
     <name>startwine-overlays</name>
-      <description lang="en">LIS217 Custom Gentoo Overlay.</description>
-        <homepage>https://github.com/LIS217/startwine-ovarlays</homepage>
+      <description lang="en">lIS217 Custom Gentoo Overlay.</description>
+        <homepage>https://github.com/lIS217/startwine-ovarlays</homepage>
         <owner type="person">
-            <name>LIS217</name>
+            <name>lIS217</name>
             <email>pri3rak217@yandex.ru</email>
         </owner>
-        <source type="git">git://github.com/LIS217/startwine-overlays.git</source>
-        <feed>https://github.com/LIS217/startwine-overlays/commits/master.atom</feed>
+        <source type="git">git://github.com/lIS217/startwine-overlays.git</source>
+        <feed>https://github.com/lIS217/startwine-overlays/commits/master.atom</feed>
   </repo>
 </repositories>
