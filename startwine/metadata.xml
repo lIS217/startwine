@@ -4,6 +4,6 @@
         <email>pri3rak217@yandex.ru</email>
     </maintainer>
 <upstream>
-        <remote-id type="github">LIS217/startwine</remote-id>
+        <remote-id type="github">LIS217/startwine-overlays</remote-id>
     </upstream>
 </pkgmetadata>
