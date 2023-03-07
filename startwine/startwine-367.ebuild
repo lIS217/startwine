@@ -4,7 +4,7 @@
 EAPI=8
 
 DESCRIPTION="startwine"
-HOMEPAGE="https://github.com/LIS217/${DESCRIPTION}"
+HOMEPAGE="https://github.com/lIS217/${DESCRIPTION}"
 SRC_URI="${HOMEPAGE}/releases/download/startwine/StartWine_v${PV}.tar.xz"
 S="${WORKDIR}"
 
