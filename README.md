@@ -1,82 +1,128 @@
-# startwine
-StartWine-Launcher
-GitHub
+sw_image1
+StartWine is a launcher that allows you to quickly and easily launch Windows applications on Linux operating systems
 
-Рис 1.
-Рис 1.
-После установки приложения нас встречает главное окно(рис 1.) На данном этапе мы можем настроить цветовую схему приложения нажав на значок валика(Рис 2.),
+StartWine Guide
+English - Русский
 
-Рис 2.
-Рис 2.
-при нажатии на надпись Ярлык откроется окно с установленными пользователем играми и программами (Рис 3.)
+Review
+Setup
+GUI
+Creating shortcuts and running games
+What is used in StartWine?
+Thank you!
+Useful links
+License
+Setup
+To start using the program, download StartWine itself from the GitHub page under sw_releases or from the discord server
 
-Рис 3.
-Рис 3.
-Для добавления игры нужно создать ярлык( при условии , что игра уже установлена на вашем ПК), выбираем версию Wine, Proton итд (Рис 4.) и идем к ехе файлу запуска игры (Рис 5.)
+GitHub > Click
 
-Рис 4.
-Рис 4.
-Рис 5.
-Рис 5.
-На следующем этапе появится окно предлагающее создать prefix(Рис 6.)Соглашаемся и на следующем этапе появляется окно спрашивающее о резервном prefix(Рис 7.) Далее будет предложено установить рекомендуемы библиотеки.(Рис 8.)
+AUR > I use Arch :p
 
-Рис 6.
-Рис 6.
-Рис 7.
-Рис 7.
-Рис 8.
-Рис 8.
-После установки библиотек ярлык с игрой или приложением добавится в раздел Ярлыки(Рис 3.)
+Discord > Click
 
-Следующая вкладка инструменты префикса(Рис 9.)В данном разделе можно управлять префиксами , делать резервные копии , восстанавливать , удалять итд.
+Make the file executable and launch it with a double click
 
-рис 9.
-рис 9.
-Вкладка Инструменты Wine(Рис 10.) В общем то остановлюсь на Winetricks(Рис 16.) в данном разделе мы можем подключить какие либо библиотеки для запуска игр и приложений.
+GUI
+Video demonstration of StartWine interface
 
-Рис 10.
-Рис 10.
-Рис 11.
-Рис 11.
-Рис 12.
-Рис 12.
-Рис 13.
-Рис 13.
-Рис 14.
-Рис 14.
-Рис 15.
-Рис 15.
-Рис 16.
-Рис 16.
-Вкладка Скачать Wine (Рис 17.) Предлагает на выбор выбрать, скачать или удалить версию Wine.
+ sw_video0_en.mp4 
+If you need quick access to folders or to add your own folder to a bookmark, click on the corresponding icon as shown in the video demonstration.
 
-Рис 17.
-Рис 17.
-Следующая вкладка Установить Лаунчеры(Рис 18) предлагает в автоматическом режиме поставить Лаунчер с настроенным префиксом.
+ sw_video2_en.mp4 
+StartWine Screenshots (Doubtful, but okeey)
 
-Рис 18.
-Рис 18.
-Еще одна вкладка это Настройки(Рис 19.-Рис 23.)В данной вкладке происходит включение-выключение необходимых функций, можно настроить параметры отображения Mangohud и настроить VFBASALT.
+sw_image1 sw_image2 sw_image3 sw_image4 sw_image5 sw_image6 sw_image7 sw_image8 sw_image9 sw_image10
 
-Рис 19.
-Рис 19.
-Рис 20.
-Рис 20.
-Рис 21.
-Рис 21.
-Рис 22.
-Рис 22.
-Рис 23.
-Рис 23.
-В режиме отладки можно посмотреть какую ошибку выдает игра или приложение.(Рис 24. - Рис 25.)
+Creating shortcuts and running games
+If you click "NO" in the choice to create a prefix for .exe and other windup formats, the default prefix for the shortcut will be used by default.
 
-Рис 24.
-Рис 24.
-Рис 25.
-Рис 25.
-Ну и последняя вкладка Остановить завершает все запущенные процессы Wine.
+Otherwise, just hit the start button and the game will launch
 
-Рис 26.
-Рис 26.
-Рис 27.
-Рис 27.
+ sw_video1_en.mp4 
+Note that StartWine has a StartWine-Run.desktop that is used by default in file managers such as dolphin, Nautilus etc. to run a .exe file without the StartWine interface in addition to the usual interface shortcut
+
+Tip!
+
+In some cases, it may turn out that the installation is going, but the percentages are not going, and the culprit is in my or maybe you have it NTFS the partition of the disk from which you started the installer. The fact is that if you have a so-called dualbut or multi-boot, call it as you like, then if you have not booted from Windows, then Windows will safely take away your rights to any actions on files. What should I do in this case?
+Option 1: Just reboot into Windows, you don't have to be logged in, then reboot into your Linux distribution. Or after booting into Windows, disable hibernation mode. How to do this? look on the internet.
+Option 2: In the folder where you have the files with the game installer, copy it and transfer it to the Linux partition, preferably in the /home/$USER/ (where $USER should be your username) section.
+What is used in StartWine?
+StartWine was written from scratch, but using already ready-made components without which the program itself did not appear
+
+List
+
+GTK 4
+Wine
+Wine-Staging
+Wine GE
+Proton GE
+Steam Proton
+Lutris
+Lutris GE
+DXVK
+DXVK GE
+VK3D
+VK3D GE
+MangoHud (Thanks VHSgunzo for the patch to work on Nvidia graphics cards!)
+vkBasalt
+gamemode
+Mesa
+Runimage
+Runimage nvidia drivers
+AMD FSR
+dgVoodoo2
+DLSS
+Thank you!
+Developers
+
+Rustan Normatov
+Nikita Maslov
+Created and helped write code
+
+Rustan Normatov
+Nikita Maslov
+Maxim Tarasov
+Participants in the project
+
+StartWine Community
+Андрей
+3y6HuK
+Alexandrdrdr
+Huskysoul
+kazbek
+Kot41ru
+Fanchji (Vitaly)
+Survolog
+Lex
+Lintech
+LinuxShef
+Sheridan
+Wik
+Project design
+
+StartWine Design Socialist Party
+
+Thank you to everyone who participated in the testing and development of StartWine, as well as in supporting it with their enthusiasm and great patience. ❤️
+
+Useful links
+The author of the manual > Lintech
+
+Website > Click
+
+Telegram > Click
+
+Discord server > Discord
+
+License
+License: GPL v3
+
+Copyright (C) Maslov N.G. Normatov R.R.
+
+This file is part of StartWine-Launcher.
+
+StartWine-Launcher is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+StartWine-Launcher is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with StartWine-Launcher. If not, see http://www.gnu.org/licenses/.
